@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>About Me | Noraze Khan</title>
+  <meta name="description" content="Learn more about Noraze Khan, 7th semester Computer Science student at Qarshi University seeking Software Development Internship."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#000a24",
+            "on-primary": "#ffffff",
+            "primary-container": "#14213d",
+            "on-primary-container": "#7c89aa",
+            "primary-fixed": "#d9e2ff",
+            "primary-fixed-dim": "#b9c6ea",
+            "on-primary-fixed": "#0d1b36",
+            "on-primary-fixed-variant": "#3a4664",
+            "secondary": "#0051d5",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#316bf3",
+            "on-secondary-container": "#fefcff",
+            "secondary-fixed": "#dbe1ff",
+            "secondary-fixed-dim": "#b4c5ff",
+            "on-secondary-fixed": "#00174b",
+            "on-secondary-fixed-variant": "#003ea8",
+            "tertiary": "#000e0b",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#002721",
+            "on-tertiary-container": "#049a87",
+            "tertiary-fixed": "#83f6e0",
+            "tertiary-fixed-dim": "#65dac4",
+            "on-tertiary-fixed": "#00201b",
+            "on-tertiary-fixed-variant": "#005046",
+            "surface": "#f8f9ff",
+            "on-surface": "#121c2a",
+            "surface-variant": "#d9e3f6",
+            "on-surface-variant": "#45464d",
+            "surface-dim": "#d0dbed",
+            "surface-bright": "#f8f9ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e6eeff",
+            "surface-container-high": "#dee9fc",
+            "surface-container-highest": "#d9e3f6",
+            "surface-tint": "#525e7d",
+            "outline": "#75777e",
+            "outline-variant": "#c5c6ce",
+            "background": "#f8f9ff",
+            "on-background": "#121c2a",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a"
+          },
+          fontFamily: {
+            "sans": ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      vertical-align: middle;
+      user-select: none;
+    }
+    .interactive-card {
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+    }
+    .interactive-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px -4px rgba(20, 33, 61, 0.08), 0 4px 6px -2px rgba(20, 33, 61, 0.04);
+      border-color: rgba(37, 99, 235, 0.3);
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-sans text-on-surface antialiased min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+  <!-- NAVIGATION BAR -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(20,33,61,0.04)]">
+    <div class="h-16 max-w-6xl mx-auto px-4 md:px-8 flex items-center justify-between">
+      <a class="flex items-center gap-2 group" href="index.html">
+        <span class="text-base uppercase tracking-tight text-primary font-bold group-hover:text-secondary transition-colors">Noraze Khan</span>
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-semibold">Intern</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6">
+        <a class="transition-colors text-on-surface-variant hover:text-secondary font-medium text-sm py-1" href="index.html">Home</a>
+        <a class="transition-colors text-secondary font-bold text-sm py-1 border-b-2 border-secondary" href="about.html">About</a>
+        <a class="transition-colors text-on-surface-variant hover:text-secondary font-medium text-sm py-1" href="skills.html">Skills</a>
+        <a class="transition-colors text-on-surface-variant hover:text-secondary font-medium text-sm py-1" href="projects.html">Projects</a>
+        <a class="transition-colors text-on-surface-variant hover:text-secondary font-medium text-sm py-1" href="education.html">Education</a>
+        <a class="transition-colors text-on-surface-variant hover:text-secondary font-medium text-sm py-1" href="certifications.html">Certifications</a>
+        <a class="transition-colors text-on-surface-variant hover:text-secondary font-medium text-sm py-1" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center h-9 px-4 rounded-lg bg-secondary text-on-secondary text-xs font-semibold hover:bg-secondary-container transition-colors shadow-sm" href="contact.html">
+          Contact Me
+        </a>
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </div>
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" class="lg:hidden p-1.5 rounded-lg text-primary hover:bg-surface-container transition-colors">
+          <span id="menu-icon" class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-outline-variant/30 bg-surface-container-lowest/98 backdrop-blur-lg px-4 py-3 shadow-lg">
+      <div class="flex flex-col gap-1 max-w-6xl mx-auto">
+        <a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container font-medium" href="index.html">
+          <span>Home</span>
+          <span class="material-symbols-outlined text-[18px] text-outline">chevron_right</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2 rounded-lg text-secondary font-bold bg-surface-container" href="about.html">
+          <span>About</span>
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container font-medium" href="skills.html">
+          <span>Skills</span>
+          <span class="material-symbols-outlined text-[18px] text-outline">chevron_right</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container font-medium" href="projects.html">
+          <span>Projects</span>
+          <span class="material-symbols-outlined text-[18px] text-outline">chevron_right</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container font-medium" href="education.html">
+          <span>Education</span>
+          <span class="material-symbols-outlined text-[18px] text-outline">chevron_right</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container font-medium" href="certifications.html">
+          <span>Certifications</span>
+          <span class="material-symbols-outlined text-[18px] text-outline">chevron_right</span>
+        </a>
+        <a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container font-medium" href="contact.html">
+          <span>Contact</span>
+          <span class="material-symbols-outlined text-[18px] text-outline">chevron_right</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="w-full pt-20 pb-16 flex-1 flex flex-col">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col gap-8 w-full">
+
+      <!-- Breadcrumbs & Page Header -->
+      <div class="flex flex-col gap-2 pt-4">
+        <div class="flex items-center gap-2 text-xs text-on-surface-variant font-medium">
+          <a href="index.html" class="hover:text-secondary transition-colors">Home</a>
+          <span>/</span>
+          <span class="text-secondary font-semibold">About</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <h1 class="text-3xl font-extrabold text-primary">About Me</h1>
+          <div class="h-1 w-12 rounded-full bg-secondary"></div>
+        </div>
+      </div>
+
+      <!-- Narrative Section -->
+      <div class="p-8 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm">
+        <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed">
+          I'm a seventh-semester BSCS student at Qarshi University with an interest in software development, web technologies, and artificial intelligence. I enjoy working on academic and personal projects that help me strengthen my programming and problem-solving skills. I'm seeking an internship where I can gain practical experience and contribute to real-world software solutions.
+        </p>
+      </div>
+
+      <!-- 3 Stat/Info Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Degree -->
+        <div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm flex flex-col justify-between gap-4 interactive-card">
+          <div class="flex items-center justify-between">
+            <span class="material-symbols-outlined text-secondary text-[28px]">school</span>
+            <span class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Degree</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-primary">BS Computer Science</h3>
+            <p class="text-sm text-on-surface-variant mt-1">Qarshi University</p>
+          </div>
+        </div>
+
+        <!-- Graduation -->
+        <div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm flex flex-col justify-between gap-4 interactive-card">
+          <div class="flex items-center justify-between">
+            <span class="material-symbols-outlined text-secondary text-[28px]">event_available</span>
+            <span class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Graduation</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-primary">Expected 2027</h3>
+            <p class="text-sm text-on-surface-variant mt-1">Currently in 7th Semester</p>
+          </div>
+        </div>
+
+        <!-- Current CGPA -->
+        <div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm flex flex-col justify-between gap-4 interactive-card">
+          <div class="flex items-center justify-between">
+            <span class="material-symbols-outlined text-secondary text-[28px]">analytics</span>
+            <span class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Current CGPA</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-primary">2.91 <span class="text-sm text-outline-variant font-normal">/ 4.00</span></h3>
+            <p class="text-sm text-on-surface-variant mt-1">Academic Standing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Focus Areas -->
+      <div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm flex flex-col gap-4">
+        <h2 class="text-lg font-bold text-primary">Key Focus Areas & Competencies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
+          <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/15 flex flex-col gap-1.5">
+            <span class="text-sm font-bold text-secondary">Web Engineering</span>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Developing responsive frontend interfaces using HTML5, CSS3, and React.js, along with server-side logic in Node.js and PHP.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/15 flex flex-col gap-1.5">
+            <span class="text-sm font-bold text-secondary">Software Architecture (OOP)</span>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Applying Object-Oriented Programming principles in Python, Java, and C++ to write clean, modular, and maintainable code.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/15 flex flex-col gap-1.5">
+            <span class="text-sm font-bold text-secondary">AI Exploration</span>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Learning artificial intelligence workflows and developing web applications such as the AI-assisted Interior Design FYP.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Steps Navigation Banner -->
+      <div class="p-6 rounded-2xl bg-gradient-to-r from-surface-container-low to-surface-container flex flex-col sm:flex-row items-center justify-between gap-4 border border-outline-variant/20">
+        <div>
+          <h3 class="text-base font-bold text-primary">Interested in seeing my code and projects?</h3>
+          <p class="text-xs text-on-surface-variant mt-0.5">Explore featured projects or technical skills.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="skills.html" class="h-9 px-4 rounded-lg bg-surface-container text-primary text-xs font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center">
+            View Skills
+          </a>
+          <a href="projects.html" class="h-9 px-4 rounded-lg bg-secondary text-on-secondary text-xs font-semibold hover:bg-secondary-container transition-colors shadow-sm flex items-center justify-center gap-1">
+            <span>Explore Projects</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-primary-container text-on-primary-container py-6 border-t border-outline-variant/10">
+    <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-xs text-on-primary-container text-center sm:text-left">
+        &copy; 2026 Noraze Khan. All rights reserved.
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="about.html" class="hover:text-surface-container-lowest transition-colors">About</a>
+        <a href="skills.html" class="hover:text-surface-container-lowest transition-colors">Skills</a>
+        <a href="projects.html" class="hover:text-surface-container-lowest transition-colors">Projects</a>
+        <a href="contact.html" class="hover:text-surface-container-lowest transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          menuIcon.textContent = 'close';
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuIcon.textContent = 'menu';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
